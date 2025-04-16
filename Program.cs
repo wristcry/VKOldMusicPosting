@@ -81,10 +81,10 @@ namespace meme {
 
                 List<string> photos = null;
                 if (upload_photos) {
-                    Console.Write("enter number of photos(2-9): ");
+                    Console.Write("enter number of photos(2-10): ");
                     string _number_of_photos = Console.ReadLine();
                     int number_of_photos;
-                    if (!int.TryParse(_number_of_photos, out number_of_photos) || number_of_photos < 2 || number_of_photos > 9) {
+                    if (!int.TryParse(_number_of_photos, out number_of_photos) || number_of_photos < 2 || number_of_photos > 10) {
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("are u retarded?");
                         Console.ReadKey();
@@ -127,10 +127,10 @@ namespace meme {
                     }
                 }
 
-                Console.Write("enter number of audios(1-9): ");
+                Console.Write("enter number of audios(1-10): ");
                 string _number_of_audios = Console.ReadLine();
                 int number_of_audios;
-                if (!int.TryParse(_number_of_audios, out number_of_audios) || number_of_audios < 1 || number_of_audios > 9) {
+                if (!int.TryParse(_number_of_audios, out number_of_audios) || number_of_audios < 1 || number_of_audios > 10) {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("are u retarded?");
                     Console.ReadKey();
